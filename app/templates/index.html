@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 style="font-size:100px;">Hi</h1>
+<form action="" method="post">
+    <div class="input textarea">
+        {{ form.names.label }} {{ form.names }}
+    </div>
+
+    <div class="input submit">
+        {{ form.submit() }}
+    </div>
+</form>
+{% endblock %}
